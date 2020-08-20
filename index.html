@@ -59,7 +59,29 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
-
+@media (max-width: 767px) {
+  .navbar-brand {
+    width: auto;
+    float: none;
+    border-bottom: 0 solid transparent;
+    margin: 0 -15px;
+  }  
+  .navbar-toggle {
+    float: left;
+  }
+  .nav-user-profile .navbar-nav {
+    margin: 0;
+  }
+  .nav-user-profile .navbar-nav>li {
+    position: static;
+    float: left;
+  }
+  .nav-user-profile .navbar-nav>li>a {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    line-height: 20px;
+  }
+}
 </style>
 </head>
 <body>
